@@ -1,0 +1,17 @@
+meta {
+  name: Get City Details
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:9192/openweatherapi/v1/direct?q=Pretoria,ZA&limit=1&appid=a800acc8296adf49623bc4d62b6a36d9
+  body: none
+  auth: inherit
+}
+
+params:query {
+  q: Pretoria,ZA
+  limit: 1
+  appid: a800acc8296adf49623bc4d62b6a36d9
+}

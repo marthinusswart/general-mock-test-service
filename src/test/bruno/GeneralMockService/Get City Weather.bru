@@ -1,0 +1,18 @@
+meta {
+  name: Get City Weather
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:9192/openweatherapi/v1/weather?lat=-25.7459277&lon=28.1879101&units=metric&appid=a800acc8296adf49623bc4d62b6a36d9
+  body: none
+  auth: inherit
+}
+
+params:query {
+  lat: -25.7459277
+  lon: 28.1879101
+  units: metric
+  appid: a800acc8296adf49623bc4d62b6a36d9
+}
